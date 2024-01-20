@@ -201,6 +201,9 @@ main {
     color: #131313;
     font-size: 30px;
 }
+.plus{
+    color: blue;
+}
 
 
 .sponsors {
@@ -241,7 +244,7 @@ main {
 
 
 /* tablet */
-@media screen and (min-width:577px) and (max-width:990px) {
+@media only screen and (min-width:577px) and (max-width:800px) {
     header {
         padding: 50px;
     }
@@ -256,6 +259,17 @@ main {
 
     .sponsors-img-container {
         flex-direction: column-reverse;
+    }
+    .feauters{
+        flex-direction: column;
+    }
+    .feauter-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .years{
+        max-width: 200px;
+        position: static;
     }
 }
 
@@ -317,5 +331,16 @@ main {
     .sponsors-img-container img {
         width: 160px;
 
+    }
+    .feauters{
+        flex-direction: column;
+    }
+    .feauter-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .years{
+        max-width: 200px;
+        position: static;
     }
 }
